@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kath-Zih</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+  }
+
+  .heart {
+    display: inline-block;
+    color: red;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .heart:hover {
+    transform: scale(1.2);
+  }
+
+  .code-animation {
+    font-size: 70px;
+}
+
+
+  .code-animation span {
+    display: inline-block;
+    opacity: 0;
+    animation: animate 1.5s linear infinite;
+  }
+
+  .code-animation span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+
+  .code-animation span:nth-child(3) {
+    animation-delay: 1s;
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="heart">&#10084;</div>
+  <div class="code-animation">
+    <span>I</span>
+    <span> </span>
+    <span>L</span>
+    <span>O</span>
+    <span>V</span>
+    <span>E</span>
+    <span> </span>
+    <span>Y</span>
+    <span>O</span>
+    <span>U</span>
+  </div>
+</div>
+
+</body>
+</html>
